@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(40, 44, 52);
+    margin: auto;
+    width: 25%;
+}
+img{
+    width: 600px;
+}
+#property, #property2, #property3, #property4{
+    background-color: azure;
+    width: 600px;
+}
+.property{
+    width: 600px;
+    
+}
+.property h1, 
+.property p {
+    margin: 0px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 22px;
+
+}
+
+.property p{
+    text-align:right;
+    float:right;
+}
+
+p{
+    font-weight: 500;
+}
+
+article {
+    height: 500px;
+    padding: 20px;
+    
+}
+  
+#map {
+    margin-left: -100px;
+    width: 800px;
+    height: 100%;
+    background-color: aquamarine;
+}
