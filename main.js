@@ -19,18 +19,6 @@ class RentalProperty{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*
     Method to display a description of the property 
 */
@@ -68,7 +56,7 @@ property2 = new RentalProperty("Josh Brennan", 60.00, 4.8, "London, Ontario", 4,
     Includes a type property that is set to special rate ( - 20% of the regular price).
 */
 class SpecialRateProperty extends RentalProperty{
-    specialRate = 0.2
+    specialRate = 0.2;
     type = "Special Rate";
     constructor(name, price, rating, location, rooms, availability, features, image, lat, lng){
         super(name, price, rating, location, rooms, availability, features, image, lat, lng);
@@ -325,6 +313,7 @@ function initMap() {
     });
 
     let properties = [property1, property2, superHost1, specialRate1];
+
     properties.forEach(element => {
         let location = {
             lat: element.lat,
@@ -333,7 +322,8 @@ function initMap() {
         
         let marker = new google.maps.Marker({
             position: location,
-            map: map
+            map: map,
+            title: element.name
         })
     });
 };
